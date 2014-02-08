@@ -1,0 +1,55 @@
+<HTML>
+<head>
+	<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
+       'version':'1','packages':['timeline']}]}"></script>
+       <script type="text/javascript">
+
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+
+  var container = document.getElementById('example3.1');
+  var chart = new google.visualization.Timeline(container);
+
+  var dataTable = new google.visualization.DataTable();
+  dataTable.addColumn({ type: 'string', id: 'Position' }); 
+    dataTable.addColumn({ type: 'string', id: 'Name' }); 
+  dataTable.addColumn({ type: 'date', id: 'Start' });
+  dataTable.addColumn({ type: 'date', id: 'End' });  
+
+/*  dataTable.addRows([ [ "cat3",   'Project1', new Date(1789, 3, 29), new Date(1789, 3, 30)  ],
+    [ 'cat1',  'Project2',  new Date(1789, 2, 3),  new Date(1789, 2, 4)  ],
+     [ 'cat1',  'Project3',  new Date(1789, 3, 3),  new Date(1789, 3, 4)  ],
+     [ 'cat3',  'Project4',new Date(1789, 4, 4),  new Date(1789, 4, 5)  ],
+     [ 'cat2',  'Project5',         new Date(1789, 2, 3),  new Date(1789, 2, 4)  ],
+     [ 'cat1',   'Project6',       new Date(1789, 2, 3),  new Date(1789, 2, 4)  ],
+     [ 'cat2',  'Project7',           new Date(1789, 2, 3),  new Date(1789, 2, 4)  ],
+     [ 'cat1',  'Project8',    new Date(1789, 2, 3),  new Date(1789, 2, 4)  ],
+     [ 'cat2',  'Project9',   new Date(1789, 2, 3),  new Date(1789, 2, 4)  ],
+     [ 'cat2',  'Project10',  new Date(1789, 2, 3),  new Date(1789, 2, 4) ],
+     [ 'cat3',  'Project11',     new Date(1789, 2, 3),  new Date(1789, 2, 4) ],
+     [ 'cat1',  'Project12',  new Date(1789, 2, 3),  new Date(1789, 2, 4) ],
+    [ 'cat2', 'Project13', new Date(1789, 2, 3),  new Date(1789, 2, 4), ],
+    [ 'cat3',   'Project14',new Date(1789, 3, 20), new Date(1789, 3, 21) ]]);
+*/
+  dataTable.addRows([["_2_1_Tape_Out","9S08RN60", new Date(2013,10,16),new Date(2013,10,17)],
+    ["_2_1_Tape_Out","9S12ZVH128 (Lumen 4WL)",new Date(2013,8,16),new Date(2013,8,17)],
+    ["_1_1_Tape_Out","MPC5744P (Panther)", new Date(2012,7,7), new Date(2012,7,8)],
+    ["_1_1_Tape_Out","Some project", new Date(2012,7,7), new Date(2012,7,8)],
+    ["_1_1_Tape_Out","Racerunner", new Date(2013,4,15),new Date(2013,4,16)],
+    ["_3_0_Tape_Out","9S12ZVM128 (Carcassonne)",new Date(2012,11,30),new Date(2012,12,1)],
+    ["_1_1_Tape_Out","QUASAR2",new Date(2012,12,14),new Date(2012,12,15)]]);
+ 
+  chart.draw(dataTable);
+}
+</script>
+</head>
+<body>
+
+
+
+<div id="example3.1" style="width: 1000px; height: 1000px;"></div>
+</body>
+</HTML>
+
+
+ 

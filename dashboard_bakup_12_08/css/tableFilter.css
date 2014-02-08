@@ -1,0 +1,119 @@
+/* 
+    Document   : tableFilter
+    Created on : Jul 3, 2013, 1:28:22 PM
+    Author     : B45802
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* filter row */
+.tablesorter-filter-row td {
+  background: #eee;
+  line-height: normal;
+  text-align: center; /* center the input */
+  -webkit-transition: line-height 0.1s ease;
+  -moz-transition: line-height 0.1s ease;
+  -o-transition: line-height 0.1s ease;
+  transition: line-height 0.1s ease; 
+}
+/* optional disabled input styling */
+.tablesorter-filter-row .disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: not-allowed;
+}
+
+/* hidden filter row */
+.tablesorter-filter-row.hideme td {
+  /*** *********************************************** ***/
+  /*** change this padding to modify the thickness     ***/
+  /*** of the closed filter row (height = padding x 2) ***/
+  padding: 2px;
+  /*** *********************************************** ***/
+  margin: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.tablesorter-filter-row.hideme .tablesorter-filter {
+  height: 1px;
+  min-height: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  /* don't use visibility: hidden because it disables tabbing */
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* filters */
+.tablesorter-filter {
+  width: 65%;
+  height: inherit;
+  margin: 4px;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  color: #333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: height 0.1s ease;
+  -moz-transition: height 0.1s ease;
+  -o-transition: height 0.1s ease;
+  transition: height 0.1s ease;
+}
+
+.tablesorter input[type="search"]{
+    margin: 0;
+padding: 5px 0 0 0;
+ 
+margin-top: 4px;
+margin-bottom: 4px;
+}
+
+.tablesorter-blue .header,
+.tablesorter-blue .tablesorter-header {
+    /*background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+*/
+/*    background-image: url(data:image/gif;base64,R0lGODlhFAASAPcAAAAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAACH5BAEAAPwALAAAAAAUABIAAAiWAPcJHDgwQAyCCBMKBBDjAACFEBtWkbHiIESCAFbIONDQysOL+wwe2KICQUWOFxnKCLBxSwyTMT4ijGEwgMsYAmKsOMDFYMIYXA7AYHGgSgwGW1jEeAmyqdOnNWkujVrzpwygOGPI2CKDgVaLCAEcWOF1iwGpVWQmXAEzJ9ADMpoyHLlxhdqLGg1WQfB0YcO7TmOwuBgQADs=);*/
+    background-repeat: no-repeat; 
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAMAAABsDg4iAAAANlBMVEUAAAAAADMzKzMAAAAAKzNmADMzK2YzADNmAGZmKzMzAAAAK2YAAGZmK2YzKwAzAGYAVQAAKwCeH2fOAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAAEgAAABIAEbJaz4AAAB/SURBVBjTlZDBDsMgDEOJMcmylkH//2ebaSpqaS/zhSgyzpNTOiRIN2UwzzuwqE3ebErwdfEK6O/FQJzzVJSOWA8vBOLACmMdDKj8NBZ0b8CS/pV8Q4HfI0emosYZde0xDiRah2/hKyd8C8IVQaFTHa60qRLT+HtjfKouGNoYd/eCAsDPHseJAAAAMHRFWHRjb21tZW50AEVkaXRlZCB3aXRoIEx1bmFQaWM6IGh0dHA6Ly9sdW5hcGljLmNvbS+9CjLcAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDEzLTA4LTAyVDA4OjM4OjQxLTA3OjAwdIXhGwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxMy0wOC0wMlQwODozODo0MS0wNzowMAXYWacAAAAASUVORK5CYII=);
+	background-position: bottom right;
+	padding: 8px 5px 14px 2px;
+	white-space: normal;
+	cursor: pointer;
+}
+
+.tablesorter-blue .headerSortUp,
+.tablesorter-blue .tablesorter-headerSortUp,
+.tablesorter-blue .tablesorter-headerAsc {
+    /*background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+*/
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAIBAMAAAAGrbKZAAAAD1BMVEX///8AKzMzKzMAAAAzKwANNMAgAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAASAAAAEgARslrPgAAADVJREFUCNdjYAACIQYoYFY0gLKUlZSgQkJCQhBBISVFJSGIKkUnIbBKoAAQgVQqiSgCkSIDAHwZBEUOfoFoAAAAMHRFWHRjb21tZW50AEVkaXRlZCB3aXRoIEx1bmFQaWM6IGh0dHA6Ly9sdW5hcGljLmNvbS+9CjLcAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDEzLTA4LTAyVDA4OjQyOjU2LTA3OjAwQ5FaQQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxMy0wOC0wMlQwODo0Mjo1Ni0wNzowMDLM4v0AAAAASUVORK5CYII=);
+ /*    background-image: url(data:image/gif;base64,R0lGODlhEgAIAAAAACH5BAEAAAEALAAAAAASAAgAhwAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAAAg8APcJHCjwQAyCCBMCiHEAQMKHMRbGmPiQIACDGCNW3GdwIsOJBh8uxAjjI0OHBE12XOkxJcOSK2EyFBgQADs=);
+   background-image: url("css/img/glyphicons-halflings.png");
+    background-position: -289px -96px;
+    display: inline-block;
+width: 14px;
+height: 14px;
+margin-top: 1px;
+line-height: 14px;
+vertical-align: text-top;
+background-repeat: no-repeat;*/
+       
+}
+
+.tablesorter-blue .headerSortDown,
+.tablesorter-blue .tablesorter-headerSortDown,
+.tablesorter-blue .tablesorter-headerDesc {
+/*    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7); 
+
+   background-image: url(data:image/gif;base64,R0lGODlhEgAIAAAAACH5BAEAAAEALAAAAAASAAgAhwAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAAAg4APftOxAjBkGDBQ8SFCgQoUOFCRkKBPAwYUEAEhkWNLDRYkaJFCFi/CjRokGSHwFQHIky40KSAQEAOw==);
+*/	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAIBAMAAAAGrbKZAAAAD1BMVEUAAAAAKzMzKzMAAAAAKwA1LBaUAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAAEgAAABIAEbJaz4AAAAxSURBVAjXY2AQUlQCIQYGBghDEchiBjMNgCwGJScVsCREECwEFASrAgsaQYUYGMCqANgSBGNyclgIAAAAMHRFWHRjb21tZW50AEVkaXRlZCB3aXRoIEx1bmFQaWM6IGh0dHA6Ly9sdW5hcGljLmNvbS+9CjLcAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDEzLTA4LTAyVDA4OjQ2OjAwLTA3OjAwYUrBZQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxMy0wOC0wMlQwODo0NjowMC0wNzowMBAXedkAAAAASUVORK5CYII=);
+
+	
+}
+.tablesorter-blue thead .sorter-false {
+	background-image: none;
+	padding: 4px;
+}

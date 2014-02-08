@@ -1,0 +1,156 @@
+/* 
+    Document   : common
+    Created on : Jun 18, 2013, 2:32:51 PM
+    Author     : B45802
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.allContentContainer{    
+}
+.contentDiv{  
+    display: inline-block;
+    padding-right: 5%;
+}
+.tableContainer{  
+    display: inline-block;  
+    margin-left: 5%; 
+
+}
+.ipTableContainer{  
+    display: inline-block;  
+    margin-left: 5%; 
+
+}
+.enterprisetableContainer{
+    display: inline-block;  
+    margin-left: 5%;    
+}
+.allContentTable{  
+    border: 1px grey solid;
+}
+.allContentTable th, .allContentTable td {
+    border: 1px solid #DDD;
+}
+.allProjectTableHead{
+    font: 18px Verdana Regular;
+    background: lightgrey;
+}
+.alertCell{
+    background: red;
+    color: white;
+}
+.financialModalButton{
+    cursor: pointer;
+    color: #00F;
+}
+.redCell{
+    background: red;
+    color: white;
+}
+
+.greenCell{
+    background: lightgreen;
+    color: black;
+}
+
+.whiteCell{
+    background: white;
+    color: black;
+}
+.blueCell{
+    background: blue;
+    color: white;
+}
+/*.burnDownContainer{
+    float:left;  
+    width: 25%;  
+    display: none;
+}*/
+.headerPadding{ 
+}
+.qmsModalButton{
+    cursor: pointer; 
+    text-align: center;
+}
+.viewQmsLabel{
+    margin: 11px 0 0 0
+}
+.milestonesModalButton{
+    cursor: pointer;
+    color: #00F; 
+} 
+.redFinancialModalCell{
+    background: red;
+    color: blue;
+}
+.whiteFinancialModalCell{
+    background: white;
+    color: green;
+}
+.redMilestoneModalCell{
+    background: red;
+    color: blue;
+}
+.whiteMilestoneModalCell{
+    background: white;
+    color: green;
+}
+.burndownModalButton{
+    cursor: pointer;
+    color: #00F; 
+}
+body .modal {
+    /* new custom width */
+    width: 900px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    margin-left: -450px;
+}
+.rrModalButton{
+    cursor: pointer;
+    color: #00F;   
+}
+.modalWindowOn{
+    overflow: hidden;
+}
+.rrModalTable{
+    width: 95%;
+}
+/*#rrModal .modal-body table{
+    border: 1px solid black;
+}
+
+#rrModal .modal-body td{
+    border: 1px solid black;
+}*/
+.burndownUploadDiv{
+    float: right; 
+
+}
+.burnDownDropdown{
+    float: left;
+}
+#burdownDropDOwnBtn{
+    float:left;
+}
+.burndownOptionContainer{
+    display: inline-block;
+    width: 90%;
+}
+pre {
+    word-break: break-all; /* webkit */
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: -moz-pre-wrap; /* fennec */
+    white-space: pre-wrap;
+    white-space: pre\9; /* IE7+ */
+}
+.enterprisetableContainer{  
+    display: inline-block;  
+    margin-left: 5%; 
+    margin-right: 5%;
+
+}

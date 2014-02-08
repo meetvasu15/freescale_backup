@@ -1,0 +1,60 @@
+{
+   "response":[
+      {
+         "header":{},
+         "data":{[],[],[]}
+      }
+   ]
+}
+
+
+ <tr> 
+                        <td>Calypso 6M</td>
+                        <td>1</td>
+                        <td>Power train</td>
+                        <td>Someone</td>
+                        <td>Some technology</td>
+                        <td>BT</td>
+                        <td>115</td>
+                        <td>$</td>
+                        <td><a href="#myModal" role="button" data-toggle="modal">QMS</a></td>
+                        <td class="alertCell" >Right Review</td>
+                        <td>milestone</td>
+                        <td> </td>
+                        <td>IP</td> 
+                        <td> <input type="button" id="goButton"  class="btn" value="Go"></input> </td>
+                    </tr>
+                    <tr> 
+                        <td>Calypso 6M</td>
+                        <td>1</td>
+                        <td>Power train</td>
+                        <td>Someone</td>
+                        <td>Some technology</td>
+                        <td>BT</td>
+                        <td>115</td>
+                        <td>$</td>
+                        <td><a href="#myModal" role="button" data-toggle="modal">QMS</a></td>
+                        <td>Right Review</td>
+                        <td class="alertCell">milestone</td>
+                        <td> </td>
+                        <td>IP</td> 
+                        <td> </td>
+                    </tr>
+                    <tr> 
+                        <td>Calypso 6M</td>
+                        <td>1</td>
+                        <td>Power train</td>
+                        <td>Someone</td>
+                        <td>Some technology</td>
+                        <td>BT</td>
+                        <td class="alertCell">115</td>
+                        <td>$</td>
+                        <td><a href="#myModal" role="button" data-toggle="modal">QMS</a></td>
+                        <td>Right Review</td>
+                        <td>milestone</td>
+                        <td> </td>
+                        <td>IP</td> 
+                        <td> </td>
+                    </tr>
+					
+					 /proj/.web_webnpidev/html/prog/NPI/MCD/programs/npi_mcd_vars.inc.php

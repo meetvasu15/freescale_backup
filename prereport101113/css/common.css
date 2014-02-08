@@ -1,0 +1,24 @@
+/* 
+    Document   : common
+    Created on : Jun 18, 2013, 2:32:51 PM
+    Author     : B45802
+    Description:
+        Purpose of the stylesheet follows.
+*/
+ 
+.projectHeading{
+    background-color: yellow;
+}
+#compareTableContainer{
+    width: 97%;
+margin: 2%;
+}
+.allFilesDivContainer{ 
+margin: 5%;
+}
+.greenRow{
+     background-color: cornsilk;
+}
+.yellowRow{
+    background-color: lightyellow;
+}

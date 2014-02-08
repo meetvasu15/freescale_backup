@@ -1,0 +1,215 @@
+/* 
+    Document   : common
+    Created on : Jun 18, 2013, 2:32:51 PM
+    Author     : B45802
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.allContentContainer{    
+}
+.contentDiv{  
+    display: inline-block;
+    padding-right: 5%;
+}
+.tableContainer{  
+    display: inline-block;  
+    margin-left: 5%; 
+    
+    width: 90%;
+}
+.ipTableContainer{  
+    display: inline-block;  
+    margin-left: 5%; 
+    width: 90%;
+
+}
+.enterprisetableContainer{
+    display: inline-block;  
+    margin-left: 5%;    
+    width: 95%;
+}
+.allContentTable{  
+   border: 0px grey solid; 
+    min-width: 950px;
+    table-layout: fixed;
+}
+.allContentTable th, .allContentTable td {
+    border: 1px solid #DDD;
+}
+.allProjectTableHead{
+    font: 18px Verdana Regular;
+    background: lightgrey;
+}
+.alertCell{
+    background: red;
+    color: white;
+}
+.financialModalButton{
+    cursor: pointer;
+    color: #00F;
+}
+.redCell{
+    background: red;
+    color: white;
+}
+
+.greenCell{
+    background: lightgreen;
+    color: black;
+}
+
+.whiteCell{
+    background: white;
+    color: black;
+}
+.blueCell{
+    background: blue;
+    color: white;
+    width:10%;
+}
+/*.burnDownContainer{
+    float:left;  
+    width: 25%;  
+    display: none;
+}*/
+.headerPadding{ 
+}
+.qmsModalButton{
+    cursor: pointer; 
+    text-align: center;
+    width:10%;
+}
+.viewQmsLabel{
+    margin: 11px 0 0 0
+}
+.milestonesModalButton{
+    cursor: pointer;
+    color: #00F; 
+    width:10%;
+} 
+.redFinancialModalCell{
+    background: red;
+    color: blue;
+    width:10%;
+}
+.whiteFinancialModalCell{
+    background: white;
+    color: green;
+    width:10%;
+}
+.redMilestoneModalCell{
+    background: red;
+    color: blue;
+    width:10%;
+}
+.whiteMilestoneModalCell{
+    background: white;
+    color: green;
+    width:10%;
+}
+.burndownModalButton{
+    cursor: pointer;
+    color: #00F; 
+    width:10%;
+}
+body .modal {
+    /* new custom width */
+    width: 1020px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    margin-left: -570px;
+}
+.rrModalButton{
+    cursor: pointer;
+    color: #00F;   
+    width:10%;
+}
+.redRRModalButton{
+     background: red;
+    color: blue;
+    cursor: pointer;
+    color: #00F;   
+    width:10%;
+}
+.modalWindowOn{
+    overflow: hidden;
+}
+.rrModalTable{
+    width: 95%;
+}
+/*#rrModal .modal-body table{
+    border: 1px solid black;
+}
+
+#rrModal .modal-body td{
+    border: 1px solid black;
+}*/
+.burndownUploadDiv{
+    float: right; 
+
+}
+.burnDownDropdown{
+    float: left;
+}
+#burdownDropDOwnBtn{
+    float:left;
+}
+.burndownOptionContainer{
+    display: inline-block;
+    width: 90%;
+}
+pre {
+    word-break: break-all; /* webkit */
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: -moz-pre-wrap; /* fennec */
+    white-space: pre-wrap;
+    white-space: pre\9; /* IE7+ */
+}
+.enterprisetableContainer{  
+    display: inline-block;  
+    margin-left: 5%; 
+    margin-right: 5%;
+}
+.wrap-td {
+    border: 1px solid black;
+    word-wrap:break-word;
+/*    padding-left: 5px;*/
+}
+#allEnterpriseContent{
+    width: 95%;
+}
+.exportBtnContainer{
+    margin:  1%;
+}
+
+#myLoadDiv {
+position: absolute;
+height: 100%;
+width: 100%;
+}
+#overlay-container {
+position: absolute;
+z-index: 1000;
+height: 100%;
+width: 100%;
+background-color: #FFF;
+text-align: center;
+}
+.loadBarContainer{
+    position: absolute;
+width: 100%;
+opacity: 1;
+top: 30%;
+z-index: 1050;
+height: 2%;
+width: 200px;
+left: 50%;
+margin-left: -100px;
+}
+#pdmPartNumber{
+    margin-bottom: 0;
+}

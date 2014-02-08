@@ -1,0 +1,27 @@
+/* 
+    Document   : common.css
+    Created on : Jun 14, 2013, 1:36:16 PM
+    Author     : B45802
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+table.toggle-table{
+   
+}
+table.toggle-table td{
+     border:1px solid #ddd;
+     text-align: center;
+}
+.activeRole{
+   background-color:  #BDBDBA;
+   cursor:pointer;
+}
+.inActiveRole{
+    background-color:  #ddd;
+    cursor:pointer;
+}

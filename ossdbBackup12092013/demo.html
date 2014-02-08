@@ -1,0 +1,102 @@
+<!DOCTYPE HTML><html>
+    <head> 
+        <title>OSS</title>
+    </head>
+    <body>
+        <div class="navbar  navbar-inverse">
+  <div class="navbar-inner">
+    <a class="brand" href="#">OSS Database</a> 
+  </div>
+</div>
+        <div id="compareTableContainer">
+            <strong>Year: </strong>        <select  id='regionSelectMenu' onchange="onselectvalue()"> 
+                    <option value="1"  >2010</option> 
+                     <option value="2"   >2011</option> 
+                      <option value="3"  >2012</option> 
+                      <option value="4" >2013</option> 
+                      <option value="5" >2014 (Forecasted)</option> 
+            </select>  
+             <form  action="Export_Purchase_Req_Controller.php" method="post" enctype="multipart/form-data" > 
+                            <input type="submit" class="btn btn-success" style="margin-top:0" name="submit" value="Export"></input>
+          </form>
+           <div style="float:right;">  <form  action="save_update_purchase_file.php" method="post" enctype="multipart/form-data" >
+                            <input type="file" title="Search for a file to Insert Data" name="file" />
+                            <input type="submit" class="btn btn-success" style="margin-top:0" name="submit" value="Upload" />
+          </form></div>
+                            
+    <div id="tableContainer">
+       </div>
+        
+        <a href="#myModal" role="button" class="btn" data-toggle="modal">Add Purchase</a>
+        
+        </div>
+        
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+    <h3 id="myModalLabel">Add a Purchase</h3>
+  </div>
+  <div class="modal-body">
+    <table>
+        <tr>
+            <td>
+                Description
+            </td>
+            <td>
+                <input type="text"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Vendor
+            </td>
+            <td>
+                <input type="text"></input>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                Amount
+            </td>
+            <td>
+                <input type="text"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Currency
+            </td>
+            <td>
+                <input type="text"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Date Approved
+            </td>
+            <td>
+                <input type="text"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Recurring
+            </td>
+            <td>
+                <input type="checkbox"></input>
+            </td>
+        </tr>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+        <script src="javascript/jquery.js" type="text/javascript"></script> 
+        <script src="javascript/common.js" type="text/javascript"></script> 
+    <script src="javascript/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
+     <link rel="stylesheet" type="text/css" href="css/common.css" />
+    </body>
+</html>
